@@ -60,6 +60,12 @@
         text-decoration-color: rgb(119, 255, 0);
     }
 
+    p#cc{
+        display: inline-block;
+        width: 420px;
+        height: 25px;
+    }
+
     #cc{
         text-align: left;
     }
