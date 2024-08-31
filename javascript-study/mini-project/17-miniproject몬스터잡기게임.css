@@ -1,0 +1,12 @@
+*{
+    text-align: center;
+
+    body{
+        font-size: 50px;
+        font-family: "Nanum Myeongjo", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 1000;
+        font-style: normal;
+    }
+
+}

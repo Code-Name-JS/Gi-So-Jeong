@@ -1,34 +1,34 @@
 *{
     text-align: center;
 
-    body {
+    body{
         font-size: 25px;
         font-family: "Noto Sans KR", sans-serif;
         font-optical-sizing: auto;
-        font-weight: <weight>;
+        font-weight: 500;
         font-style: normal;
     }
 
-    h1#name {
+    h1#name{
         font-size: 65px;
         font-family: "Nanum Myeongjo", serif;
         font-weight: 1000;
         font-style: normal;
     }
 
-    p#pet {
+    p#pet{
         font-size: 35px;
         color: dodgerblue;
     }
 
-    p#petname {
+    p#petname{
         font-size: 50px;
         font-family: "Nanum Myeongjo", serif;
         font-weight: 600;
         font-style: italic;
     }
 
-    p#petfruit, #petwhy {
+    p#petfruit, #petwhy{
         font-size: 35px;
     }
 
