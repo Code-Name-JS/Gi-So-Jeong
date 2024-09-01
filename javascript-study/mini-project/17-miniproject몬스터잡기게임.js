@@ -8,6 +8,17 @@ if(isThere){
     // 게임 시작 시 '닉네임 설정'
     let gamename = prompt("게임에 사용할 닉네임을 정하세요.");
 
+    // 닉네임 설정을 취소했을 경우
+    if(gamename === null || gamename.trim() === ""){
+        
+        alert("잘못 입력하여 게임이 종료되었습니다.");
+        alert("다시 도전하세요!");
+        alert("당신은 응원합니다!");
+
+        // 여기서 코드 실행 중지
+        return;
+    }
+
     // 몬스터 잡기 게임을 시작한다는 문구
     const container = document.getElementById("container");
 
@@ -28,7 +39,7 @@ if(isThere){
     const hr2 = document.createElement("hr");
     container.appendChild(hr2);
 
-    // 닉네임을 표시할 nicknameElement 요소 추가
+    // 닉네임을 표시할 p 요소 추가
     const nicknameElement = document.createElement("p");
     nicknameElement.innerHTML = `당신의 닉네임은 <strong><span style="color: black;">${gamename}</span></strong>입니다.`;
     nicknameElement.style.color = "darkgray";
