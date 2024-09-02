@@ -1,4 +1,50 @@
 /* 모든 요소를 중앙 정렬 적용 */
 *{
     text-align: center;
+    font-size: 20px;
+}
+
+/* 테이블 가운데 정렬 */
+#container, #form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* 테이블 자세에 고정된 너비를 설정 */
+table{
+    width: 50%;
+    table-layout: fixed;
+}
+
+/* 텍스트 줄 바꿈 방지 */
+table th{
+    white-space: nowrap;
+}
+
+/* 테이블 셀의 수평 패딩을 제거하거나 최소화 */
+table th, table td{
+    width: auto;
+    padding: 10px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+/* 버튼들은 여전히 가운데 정렬 */
+.buttons{
+    text-align: center;
+}
+
+/* 지나치게 좁거나 너무 길게 표시되지 않게 적절한 너비 설정 */
+.button1, #button2, #button3{
+    font-size: 15px;
+    width: 15%;
+    height: 50px;
+    box-sizing: border-box;
+}
+
+/* 입력 필드들 간격 조절 */
+table input, table select{
+    margin-bottom: 20px;
 }

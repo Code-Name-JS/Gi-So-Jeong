@@ -18,6 +18,184 @@
 
 <body>
     
+    <!-- container 태그 -->
+    <div id="container">
+
+        <!-- 입력 양식 form 태그  -->
+        <form id="form" action="#">
+
+            <!-- 격자 형식의 테이블 -->
+            <table class="table">
+
+                
+                <!-- 첫 번째 행 : 아이디 작성란 -->
+                <tr>
+
+                     <th>
+                        아이디
+                     </th>
+
+                     <td>
+                        <input name="id" placeholder="아이디" autocomplete="off" required>
+                     </td>
+
+                </tr>
+
+                <!-- 두 번째 행 : 비밀번호 작성란 -->
+                <tr>
+
+                    <th>
+                        비밀번호
+                    </th>
+                
+                    <td>
+                        <input type="password" name="pw1" placeholder="비밀번호" autocomplete="off" required> 
+                    </td>
+
+                </tr>
+
+                <!-- 세 번째 행 : 비밀번호 확인란 -->
+                 <tr>
+
+                    <th>
+                        비밀번호 확인
+                    </th>
+
+                    <td>
+                        <input type="password" name="pw2" placeholder="비밀번호" autocomplete="off" required>
+                    </td>
+
+                 </tr>
+
+                <!-- 네 번째 행 : 사용자 이름 작성란 -->
+                <tr>
+
+                    <th>
+                        이름
+                    </th>
+
+                    <td>
+                        <input name="name" placeholder="사용자 이름" autocomplete="off" required>
+                    </td>
+
+                </tr>
+
+                <!-- 다섯 번째 행 : 전화번호 작성란 -->
+                <tr>
+
+                    <th>
+                        전화번호
+                    </th>
+
+                    <td>
+                        <input id="phone" name="phone" placeholder="휴대전화 번호" autocomplete="off" required>
+                    </td>
+
+                </tr>
+
+                <!-- 여섯 번째 행 : 직무 고르기 -->
+                <tr>
+
+                    <th>
+                        원하는 직무
+                    </th>
+
+                    <td>
+
+                        <select name="position">
+
+                            <option value="developer">
+                                개발자
+                            </option>
+
+                            <option value="designer">
+                                웹디자이너
+                            </option>
+
+                            <option value="manager">
+                                기획자
+                            </option>
+
+                            <option value="undertermined" selected>
+                                미정
+                            </option>
+
+                        </select>
+                    </td>
+                </tr>
+
+                <!-- 일곱 번째 행 : 성별 고르는 항목 -->
+                <tr>
+                    
+                    <th>
+                        성별
+                    </th>
+
+                    <td>
+
+                        <label>
+                            <input type="radio" name="gender" value="male" checked>
+                            남자
+                        </label>
+
+                        <label>
+                            <input type="radio" name="gender" value="female">
+                            여자
+                        </label>
+
+                    </td>
+
+                </tr>
+
+                <!-- 여덟 번째 행 : 이메일 작성란 -->
+                 <tr>
+
+                    <th>
+                        이메일
+                    </th>
+
+                    <td>
+                        <input title="정확한 메일 주소를 작성해주세요" type="email" name="email" autocomplete="off" required>
+                    </td>
+
+                </tr>
+
+                <!-- 아홉 번째 행 : 자기소개란 -->
+                <tr>
+
+                    <th>
+                        자기소개
+                    </th>
+
+                    <td>
+                        <textarea name="intro">
+                        </textarea>
+                    </td>
+
+                </tr>
+
+            </table>
+
+        </form>
+    </div>
+    <br>
+
+    <!-- 취소 리셋 가입 버튼 3개 -->
+    <div class="buttons">
+                
+        <input id="button2" type="button" value="취소" class="btn" title="취소">
+        &nbsp;&nbsp;
+                
+        <input class="button1" type="reset" value="리셋" class="btn" title="처음으로">
+        &nbsp;&nbsp;
+                
+        <input id="button3" type="submit" value="가입" class="btn" title="가입">
+
+    </div>
+
+</form>
+</div>
+
     <script src="22-miniproject회원가입폼만들기.js">
     </script>
 
